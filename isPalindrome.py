@@ -1,8 +1,19 @@
 class Solution:
+
+    def useStrIsPalindrome(self, x):
+        """
+        :type x: int
+        :rtype: bool
+        """
+        x = str(x)
+        rx = x[::-1]
+        return x == rx
+    
     def isPalindrome(self, x):
         """
         :type x: int
         :rtype: bool
+        No translate int to str
         """
         if x < 0:
             return False
